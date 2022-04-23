@@ -12,7 +12,7 @@ const Hero = (props) => (
       My personal portfolio
     </SectionTitle>
     <SectionText>
-      Hi ! There 🖐 I am Manna Khandelwal 
+      Hi ! There 🖐 I am Manan Khandelwal 
     </SectionText>
     <Button onClick={() => window.location = "https://www.linkedin.com/in/manan-khandelwal-327836167/"} >Learn More</Button>
   </LeftSection> 
