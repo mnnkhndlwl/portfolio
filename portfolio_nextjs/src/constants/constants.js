@@ -29,7 +29,7 @@ export const projects = [
   {
     title: 'Nft marketplace',
     description: "This is my first ever react native app",
-    image: '/images/4.png',
+    image: '/images/4.PNG',
     tags: ['React-Native'],
     source: 'https://github.com/mnnkhndlwl/nft-marketplace_react-native',
     visit: 'https://google.com',
