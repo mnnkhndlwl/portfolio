@@ -1,7 +1,11 @@
+import {Work,Footer,Header,Skills,Testimonial,About} from './container/index'
+
 
 const App = () => {
   return (
-    <h1>app</h1>
+    <div className="app">
+      
+    </div>
   );
 }
 
