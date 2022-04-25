@@ -42,7 +42,13 @@ const Header = () => {
       transition={{ duration: 0.5, delayChildren: 0.5 }}
       className="app__header-img"
     >
-      <img src="https://avatars.githubusercontent.com/u/75252077?v=4" alt="profile_bg" style={{borderRadius:'50%'}}/>
+      <img src="https://avatars.githubusercontent.com/u/75252077?v=4" alt="profile_bg" 
+      style={{
+        borderRadius:'50%',
+        height:"300px",
+        width:"300px",
+        }}
+        />
       <motion.img  //background behind profile image
         whileInView={{ scale: [0, 1] }}
         transition={{ duration: 1, ease: 'easeInOut' }}
