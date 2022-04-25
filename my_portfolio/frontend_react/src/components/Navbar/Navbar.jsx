@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState,useContext } from 'react'
 import './Navbar.scss';
 import { images } from "../../constants/index.js";
 import { HiMenuAlt4, HiX } from 'react-icons/hi';
@@ -8,7 +8,7 @@ const Navbar = () => {
   const [toggle, setToggle] = useState(false);
   return (
     //   this '__' is BEM convention
-    <nav className='app__navbar'>
+    <nav className='app__navbar' >
       <div className='app__navbar-logo'>
         <img src={images.undraw}
           alt="kuch bhi" />
@@ -21,6 +21,7 @@ const Navbar = () => {
           </li>
         ))}
       </ul>
+
       {/* for mobile view */}
       <div className="app__navbar-menu">
         <HiMenuAlt4 onClick={() => setToggle(true)} />

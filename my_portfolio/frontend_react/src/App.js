@@ -3,6 +3,7 @@ import {Navbar} from './components/index';
 import "./App.scss";
 
 const App = () => {
+  
   return (
     <div className="app">
     <Navbar />
