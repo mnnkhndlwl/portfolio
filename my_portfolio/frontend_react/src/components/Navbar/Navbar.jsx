@@ -10,7 +10,7 @@ const Navbar = () => {
     //   this '__' is BEM convention
     <nav className='app__navbar' >
       <div className='app__navbar-logo'>
-        <img src={images.undraw}
+        <img src={images.logo}
           alt="kuch bhi" />
       </div>
       <ul className='app__navbar-links'>
