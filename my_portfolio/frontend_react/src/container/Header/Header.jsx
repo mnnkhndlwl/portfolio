@@ -40,7 +40,7 @@ const Header = () => {
       {/* profile image */}
       <motion.div
       whileInView={{ opacity: [0, 1] }}
-      transition={{ duration: 0.5, delayChildren: 0.5 }}
+      transition={{ duration: 1, delayChildren: 0.5,ease:'easeInOut' }}
       className="app__header-img"
     >
       <img src="https://avatars.githubusercontent.com/u/75252077?v=4" alt="profile_bg" 
@@ -48,15 +48,16 @@ const Header = () => {
         borderRadius:'50%',
         height:"300px",
         width:"300px",
+        marginBottom:"180px",
         }}
         />
-      <motion.img  //background behind profile image
+      {/* <motion.img  //background behind profile image
         whileInView={{ scale: [0, 1] }}
         transition={{ duration: 1, ease: 'easeInOut' }}
         src={images.circle}
         alt="profile_circle"
         className="overlay_circle"
-      />
+      /> */}
     </motion.div>
 
     <motion.div
