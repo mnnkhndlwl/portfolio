@@ -23,7 +23,19 @@ const Projects = () => {
   }, []);
 
   const handleWorkFilter = (item) =>{
-     
+     setActiveFilter(item);
+     setAnimateCard([{y:100,opacity:0}]);
+
+     setTimeout(() => {
+      setAnimateCard([{y:0,opacity:1}]);
+      if(item === 'All')
+      {
+        setFilterWork(works);
+      }
+      else{
+        setFilterWork(works.filter((work) => work.tags.includes(item)));
+      }
+     }, 500);
   }
 
   return (
@@ -76,7 +88,7 @@ const Projects = () => {
                     whileHover={{ scale: [1, 0.90] }}
                     transition={{ duration: 0.25 }}
                     className="app__flex"
-                  >
+                  > 
                     <AiFillGithub />
                   </motion.div>
                 </a>

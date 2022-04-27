@@ -11,8 +11,7 @@ const App = () => {
     y: 50
   });
 
-  const [cursorVariant, setCursorVariant] = useState("default");
-
+  const [cursorvariants,setcursorvariants ] = useState("default");
 
   useEffect(() => {
     const mouseMove = e => {
@@ -34,14 +33,6 @@ const App = () => {
       x: mousePosition.x - 16,
       y: mousePosition.y - 16,
     },
-    text: {
-      height: 150,
-      width: 150,
-      x: mousePosition.x - 75,
-      y: mousePosition.y - 75,
-      backgroundColor: "yellow",
-      mixBlendMode: "difference"
-    }
   }
   
   return (
@@ -50,7 +41,7 @@ const App = () => {
     <motion.div
         className='cursor'
         variants={variants}
-        animate={cursorVariant}
+        animate={cursorvariants}
       />
     <Navbar />
       <Header />
