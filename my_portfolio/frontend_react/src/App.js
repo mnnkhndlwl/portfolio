@@ -1,4 +1,4 @@
-import {Projects,Footer,Header,Skills,Testimonial,About} from './container/index'
+import {Projects,Footer,Header,Skills,About} from './container/index'
 import {Navbar} from './components/index';
 import "./App.scss";
 import { useState,useEffect } from 'react';
@@ -49,7 +49,6 @@ const App = () => {
       <About />
       <Projects />
       <Skills />
-      <Testimonial />
       <Footer />
       </div>
     </div>
