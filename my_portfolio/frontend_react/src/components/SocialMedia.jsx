@@ -6,13 +6,13 @@ const SocialMedia = () => {
   return (
    <div className="app__social">
        <div>
-           <BsGithub />
+           <BsGithub onClick={() => window.location = "https://github.com/mnnkhndlwl"}/>
         </div>
         <div>
-           <BsLinkedin />
+           <BsLinkedin onClick={() => window.location = "https://www.linkedin.com/in/manan-khandelwal-327836167/"}/>
         </div>
         <div>
-            <SiCodechef />
+            <SiCodechef onClick={() => window.location = "https://www.codechef.com/users/grx9"}/>
         </div>   
    </div>
   )
